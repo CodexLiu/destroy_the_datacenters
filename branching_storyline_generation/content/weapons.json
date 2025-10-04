@@ -1,0 +1,53 @@
+{
+  "version": "2025.0",
+  "style": {
+    "year": 2025,
+    "imagePromptTemplate": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, {weapon subject}, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+    "languageNotes": "Lean into clever, grounded descriptions; explain jargon in parenthesis when needed."
+  },
+  "targets": {
+    "totalWeapons": 35,
+    "categories": {
+      "improvised": 8,
+      "drone": 7,
+      "cyber": 8,
+      "social": 6,
+      "support": 6
+    },
+    "damageTierMinimums": {
+      "light": 5,
+      "medium": 5,
+      "heavy": 5
+    },
+    "stealthBands": {
+      "highStealth": 10,
+      "lowStealth": 10
+    },
+    "heatModifiers": {
+      "increase": 20,
+      "decreaseOrRedistribute": 10
+    },
+    "agiImpact": 8,
+    "publicSupportModifiers": 6
+  },
+  "templates": [
+    {
+      "id": "wp:template",
+      "name": "Template Weapon",
+      "category": "improvised",
+      "description": "Short 2025-friendly blurb explaining what it is in plain language.",
+      "icon": "weapon-generic",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, template weapon being tuned by laid-off tech workers, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 20,
+      "damageType": "explosive",
+      "variance": 0.15,
+      "stealth": 0.2,
+      "cooldownTicks": 2,
+      "cost": 200,
+      "primaryEffects": ["heat", "funds"],
+      "requires": [],
+      "effects": []
+    }
+  ],
+  "weapons": []
+}

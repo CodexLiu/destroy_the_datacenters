@@ -1,0 +1,40 @@
+{
+  "version": "2025.0",
+  "style": {
+    "year": 2025,
+    "imagePromptTemplate": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, {subject}, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+    "languageNotes": "Keep every blurb understandable by an average tech worker; reference real 2024-2025 happenings before leaning into satire."
+  },
+  "targets": {
+    "totalEvents": 100,
+    "phases": {
+      "early": 30,
+      "mid": 40,
+      "late": 20,
+      "endgame": 10
+    },
+    "statCoverageMinimums": {
+      "heat": 40,
+      "agi": 35,
+      "funds": 45,
+      "publicSupport": 30,
+      "defense": 25,
+      "inventory": 20
+    }
+  },
+  "templates": [
+    {
+      "id": "ev:template",
+      "title": "Template Title",
+      "body": "One-paragraph summary of a 2025 tech backlash scenario.",
+      "year": 2025,
+      "phase": "early",
+      "primaryStats": ["heat", "funds"],
+      "triggers": [],
+      "oneTime": true,
+      "choices": [],
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, laid-off engineers debating drone strike ethics, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire"
+    }
+  ],
+  "events": []
+}

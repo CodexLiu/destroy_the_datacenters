@@ -1,0 +1,13 @@
+{
+  "version": "2025.0",
+  "tickMs": 600,
+  "startingFunds": 500,
+  "startingPublicSupport": 55,
+  "startingHeat": 5,
+  "startingAgiProgress": 10,
+  "baseAgiRatePerTick": 0.6,
+  "heatAffectsAgiRate": 0.02,
+  "destroyedDcAgiPenalty": 2.5,
+  "damageDefenseFactor": 0.65,
+  "randomVarianceDefault": 0.1
+}

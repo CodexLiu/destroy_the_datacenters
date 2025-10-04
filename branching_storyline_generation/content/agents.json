@@ -1,0 +1,34 @@
+{
+  "version": "2025.0",
+  "style": {
+    "year": 2025,
+    "languageNotes": "Agents are human or bot helpers; keep descriptions empathetic, focused on post-layoff improvisation."
+  },
+  "targets": {
+    "totalAgents": 15,
+    "roles": {
+      "operative": 5,
+      "logistics": 5,
+      "tech": 5
+    }
+  },
+  "templates": [
+    {
+      "id": "ag:template",
+      "name": "Template Agent",
+      "role": "operative",
+      "description": "One-sentence hook for a 2025 character helping the cause.",
+      "icon": "agent-generic",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, template agent coordinating in a warehouse, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "successRate": 0.7,
+      "speed": 1.0,
+      "risk": 0.3,
+      "capacity": 1,
+      "cost": 100,
+      "primaryEffects": ["heat", "funds"],
+      "requires": [],
+      "effects": []
+    }
+  ],
+  "agents": []
+}
