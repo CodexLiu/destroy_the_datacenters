@@ -46,7 +46,1258 @@
           "inventory": 20
         }
       },
-      "items": []
+      "items": [
+        {
+          "id": "ev:openai-rationing-san-francisco",
+          "title": "San Francisco Compute Rationing Stop",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-sacramento",
+          "title": "Sacramento Compute Rationing Stop",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-seattle",
+          "title": "Seattle Compute Rationing Stop",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-austin",
+          "title": "Austin Compute Rationing Stop",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-chicago",
+          "title": "Chicago Compute Rationing Stop",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-boston",
+          "title": "Boston Compute Rationing Stop",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-atlanta",
+          "title": "Atlanta Compute Rationing Stop",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-denver",
+          "title": "Denver Compute Rationing Stop",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-miami",
+          "title": "Miami Compute Rationing Stop",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:openai-rationing-new-york-city",
+          "title": "New York City Compute Rationing Stop",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-phoenix",
+          "title": "Phoenix Waymo Curfew Briefing",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-san-diego",
+          "title": "San Diego Waymo Curfew Briefing",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-los-angeles",
+          "title": "Los Angeles Waymo Curfew Briefing",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-las-vegas",
+          "title": "Las Vegas Waymo Curfew Briefing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-houston",
+          "title": "Houston Waymo Curfew Briefing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-miami",
+          "title": "Miami Waymo Curfew Briefing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-atlanta",
+          "title": "Atlanta Waymo Curfew Briefing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-chicago",
+          "title": "Chicago Waymo Curfew Briefing",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-newark",
+          "title": "Newark Waymo Curfew Briefing",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:google-curfew-washington-dc",
+          "title": "Washington, D.C. Waymo Curfew Briefing",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-phoenix",
+          "title": "Phoenix Desert Cooling Hearing",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-tucson",
+          "title": "Tucson Desert Cooling Hearing",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-las-cruces",
+          "title": "Las Cruces Desert Cooling Hearing",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-albuquerque",
+          "title": "Albuquerque Desert Cooling Hearing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-salt-lake-city",
+          "title": "Salt Lake City Desert Cooling Hearing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-reno",
+          "title": "Reno Desert Cooling Hearing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-el-paso",
+          "title": "El Paso Desert Cooling Hearing",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-san-bernardino",
+          "title": "San Bernardino Desert Cooling Hearing",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-fresno",
+          "title": "Fresno Desert Cooling Hearing",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:microsoft-water-las-vegas",
+          "title": "Las Vegas Desert Cooling Hearing",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-san-jose",
+          "title": "San Jose GPU Lottery Showcase",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-sunnyvale",
+          "title": "Sunnyvale GPU Lottery Showcase",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-portland",
+          "title": "Portland GPU Lottery Showcase",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-vancouver",
+          "title": "Vancouver GPU Lottery Showcase",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-boise",
+          "title": "Boise GPU Lottery Showcase",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-minneapolis",
+          "title": "Minneapolis GPU Lottery Showcase",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-detroit",
+          "title": "Detroit GPU Lottery Showcase",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-toronto",
+          "title": "Toronto GPU Lottery Showcase",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-montreal",
+          "title": "Montreal GPU Lottery Showcase",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:nvidia-lotto-boston",
+          "title": "Boston GPU Lottery Showcase",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-menlo-park",
+          "title": "Menlo Park Llama Licensing Town Hall",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-austin",
+          "title": "Austin Llama Licensing Town Hall",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-new-york-city",
+          "title": "New York City Llama Licensing Town Hall",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-london",
+          "title": "London Llama Licensing Town Hall",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-paris",
+          "title": "Paris Llama Licensing Town Hall",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-berlin",
+          "title": "Berlin Llama Licensing Town Hall",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-dublin",
+          "title": "Dublin Llama Licensing Town Hall",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-madrid",
+          "title": "Madrid Llama Licensing Town Hall",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-rome",
+          "title": "Rome Llama Licensing Town Hall",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:meta-llama-warsaw",
+          "title": "Warsaw Llama Licensing Town Hall",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-austin",
+          "title": "Austin xAI Grok Recruitment Rally",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-dallas",
+          "title": "Dallas xAI Grok Recruitment Rally",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-houston",
+          "title": "Houston xAI Grok Recruitment Rally",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-boca-chica",
+          "title": "Boca Chica xAI Grok Recruitment Rally",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-tulsa",
+          "title": "Tulsa xAI Grok Recruitment Rally",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-kansas-city",
+          "title": "Kansas City xAI Grok Recruitment Rally",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-st-louis",
+          "title": "St. Louis xAI Grok Recruitment Rally",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-nashville",
+          "title": "Nashville xAI Grok Recruitment Rally",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-orlando",
+          "title": "Orlando xAI Grok Recruitment Rally",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:xai-grok-charlotte",
+          "title": "Charlotte xAI Grok Recruitment Rally",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-arcata",
+          "title": "Arcata Redwood Safety Drill",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-eureka",
+          "title": "Eureka Redwood Safety Drill",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-portland",
+          "title": "Portland Redwood Safety Drill",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-sacramento",
+          "title": "Sacramento Redwood Safety Drill",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-salem",
+          "title": "Salem Redwood Safety Drill",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-olympia",
+          "title": "Olympia Redwood Safety Drill",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-bellingham",
+          "title": "Bellingham Redwood Safety Drill",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-tacoma",
+          "title": "Tacoma Redwood Safety Drill",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-vancouver",
+          "title": "Vancouver Redwood Safety Drill",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:anthropic-drill-victoria",
+          "title": "Victoria Redwood Safety Drill",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-san-antonio",
+          "title": "San Antonio Defense Labeling Expo",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-colorado-springs",
+          "title": "Colorado Springs Defense Labeling Expo",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-tampa",
+          "title": "Tampa Defense Labeling Expo",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-norfolk",
+          "title": "Norfolk Defense Labeling Expo",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-san-diego",
+          "title": "San Diego Defense Labeling Expo",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-huntsville",
+          "title": "Huntsville Defense Labeling Expo",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-dayton",
+          "title": "Dayton Defense Labeling Expo",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-charleston",
+          "title": "Charleston Defense Labeling Expo",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-anchorage",
+          "title": "Anchorage Defense Labeling Expo",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:scaleai-contract-honolulu",
+          "title": "Honolulu Defense Labeling Expo",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-palo-alto",
+          "title": "Palo Alto AI Ethics Hackathon",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-san-francisco",
+          "title": "San Francisco AI Ethics Hackathon",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-los-angeles",
+          "title": "Los Angeles AI Ethics Hackathon",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-new-york-city",
+          "title": "New York City AI Ethics Hackathon",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-boston",
+          "title": "Boston AI Ethics Hackathon",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-toronto",
+          "title": "Toronto AI Ethics Hackathon",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-seattle",
+          "title": "Seattle AI Ethics Hackathon",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-chicago",
+          "title": "Chicago AI Ethics Hackathon",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-austin",
+          "title": "Austin AI Ethics Hackathon",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:stanford-ethics-atlanta",
+          "title": "Atlanta AI Ethics Hackathon",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-san-francisco",
+          "title": "San Francisco Data Audit Dragnet",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-seattle",
+          "title": "Seattle Data Audit Dragnet",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-portland",
+          "title": "Portland Data Audit Dragnet",
+          "phase": "early",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-los-angeles",
+          "title": "Los Angeles Data Audit Dragnet",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-phoenix",
+          "title": "Phoenix Data Audit Dragnet",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-dallas",
+          "title": "Dallas Data Audit Dragnet",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-chicago",
+          "title": "Chicago Data Audit Dragnet",
+          "phase": "mid",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-new-york-city",
+          "title": "New York City Data Audit Dragnet",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "defense"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-boston",
+          "title": "Boston Data Audit Dragnet",
+          "phase": "late",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi"
+          ],
+          "status": "done"
+        },
+        {
+          "id": "ev:ftc-audit-washington-dc",
+          "title": "Washington, D.C. Data Audit Dragnet",
+          "phase": "endgame",
+          "stats": [
+            "heat",
+            "funds",
+            "publicSupport",
+            "agi",
+            "inventory"
+          ],
+          "status": "done"
+        }
+      ]
     },
     "weapons": {
       "targetCount": 35,
