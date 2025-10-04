@@ -1,0 +1,72 @@
+{
+  "version": "2025.0",
+  "stylePromptTemplate": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, {subject}, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+  "statusOptions": ["pending", "in_progress", "done"],
+  "guidelines": {
+    "tone": "Keep everything set in 2025, readable by an average tech worker, and satirical without glorifying harm.",
+    "creatives": {
+      "datacenters": "datacenter-researcher",
+      "events": "event-writer",
+      "weapons": "arsenal-designer"
+    },
+    "workflow": [
+      "Each category has exactly one dedicated creative; own your lane end to end.",
+      "Open the relevant *_creative_prompt.md file for step-by-step instructions.",
+      "Claim the first item with status 'pending'. If none exist and the target count is not met, add a new pending stub before working.",
+      "Update the appropriate content file in content/ then run the validator script in scripts/.",
+      "Mark the item as 'done' (or add a completed record) here so the next agent skips it.",
+      "Validator scripts are locked; never edit them—your task is complete only when the corresponding test passes.",
+      "Datacenter author: run ./scripts/generate_datacenter_coords.py before validating coordinates."
+    ]
+  },
+  "categories": {
+    "events": {
+      "targetCount": 100,
+      "contentPath": "content/events.json",
+      "promptPath": "events/events_creative_prompt.md",
+      "validator": "scripts/validate_events.py",
+      "owner": "event-writer",
+      "distribution": {
+        "phases": {"early": 30, "mid": 40, "late": 20, "endgame": 10},
+        "stats": {"heat": 40, "agi": 35, "funds": 45, "publicSupport": 30, "defense": 25, "inventory": 20}
+      },
+      "items": []
+    },
+    "weapons": {
+      "targetCount": 35,
+      "contentPath": "content/weapons.json",
+      "promptPath": "weapons/weapons_creative_prompt.md",
+      "validator": "scripts/validate_weapons.py",
+      "owner": "arsenal-designer",
+      "distribution": {
+        "categories": {"improvised": 8, "drone": 7, "cyber": 8, "social": 6, "support": 6},
+        "damageTiers": {"light": 5, "medium": 5, "heavy": 5},
+        "stealth": {"high": 10, "low": 10}
+      },
+      "items": []
+    },
+    "datacenters": {
+      "targetCount": 60,
+      "contentPath": "content/datacenters.geojson",
+      "promptPath": "datacenters/datacenter_creative_prompt.md",
+      "validator": "scripts/validate_datacenters.py",
+      "owner": "datacenter-researcher",
+      "tools": ["scripts/generate_datacenter_coords.py"],
+      "distribution": {
+        "regions": {"northeast": 12, "southeast": 10, "midwest": 10, "mountain": 8, "west": 12, "swSpecial": 8},
+        "powerTiers": {"low": 10, "medium": 20, "high": 20, "mega": 10}
+      },
+      "items": []
+    },
+    "agents": {
+      "targetCount": 15,
+      "contentPath": "content/agents.json",
+      "promptPath": "agents/agents_creative_prompt.md",
+      "validator": "scripts/validate_agents.py",
+      "distribution": {
+        "roles": {"operative": 5, "logistics": 5, "tech": 5}
+      },
+      "items": []
+    }
+  }
+}

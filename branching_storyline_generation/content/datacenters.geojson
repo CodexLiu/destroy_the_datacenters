@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "name": "destroy_the_datacenters",
+  "metadata": {
+    "version": "2025.0",
+    "style": {
+      "year": 2025,
+      "imagePromptTemplate": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, {datacenter subject}, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire"
+    },
+    "targets": {
+      "totalDatacenters": 60,
+      "regions": {
+        "northeast": 12,
+        "southeast": 10,
+        "midwest": 10,
+        "mountain": 8,
+        "west": 12,
+        "swSpecial": 8
+      },
+      "powerTiers": {
+        "low": 10,
+        "medium": 20,
+        "high": 20,
+        "mega": 10
+      }
+    },
+    "template": {
+      "type": "Feature",
+      "id": "dc:template",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.5795, 39.8283]
+      },
+      "properties": {
+        "id": "dc:template",
+        "name": "Template Compute Campus",
+        "operator": "Bananazon Compute",
+        "region": "US-CENTRAL",
+        "regionGroup": "midwest",
+        "state": "IA",
+        "powerMW": 120,
+        "powerTier": "high",
+        "computeUnits": 450,
+        "healthMax": 100,
+        "defense": 0.35,
+        "agiImpact": 7,
+        "status": "intact",
+        "icon": "datacenter",
+        "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, 2025 cornfield data campus guarded by autonomous tractors, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire"
+      }
+    }
+  },
+  "features": []
+}
