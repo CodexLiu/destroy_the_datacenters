@@ -1,7 +1,11 @@
 {
   "version": "2025.0",
   "stylePromptTemplate": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, {subject}, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
-  "statusOptions": ["pending", "in_progress", "done"],
+  "statusOptions": [
+    "pending",
+    "in_progress",
+    "done"
+  ],
   "guidelines": {
     "tone": "Keep everything set in 2025, readable by an average tech worker, and satirical without glorifying harm.",
     "creatives": {
@@ -15,7 +19,7 @@
       "Claim the first item with status 'pending'. If none exist and the target count is not met, add a new pending stub before working.",
       "Update the appropriate content file in content/ then run the validator script in scripts/.",
       "Mark the item as 'done' (or add a completed record) here so the next agent skips it.",
-      "Validator scripts are locked; never edit them—your task is complete only when the corresponding test passes.",
+      "Validator scripts are locked; never edit them\u2014your task is complete only when the corresponding test passes.",
       "Datacenter author: run ./scripts/generate_datacenter_coords.py before validating coordinates."
     ]
   },
@@ -27,8 +31,20 @@
       "validator": "scripts/validate_events.py",
       "owner": "event-writer",
       "distribution": {
-        "phases": {"early": 30, "mid": 40, "late": 20, "endgame": 10},
-        "stats": {"heat": 40, "agi": 35, "funds": 45, "publicSupport": 30, "defense": 25, "inventory": 20}
+        "phases": {
+          "early": 30,
+          "mid": 40,
+          "late": 20,
+          "endgame": 10
+        },
+        "stats": {
+          "heat": 40,
+          "agi": 35,
+          "funds": 45,
+          "publicSupport": 30,
+          "defense": 25,
+          "inventory": 20
+        }
       },
       "items": []
     },
@@ -39,9 +55,22 @@
       "validator": "scripts/validate_weapons.py",
       "owner": "arsenal-designer",
       "distribution": {
-        "categories": {"improvised": 8, "drone": 7, "cyber": 8, "social": 6, "support": 6},
-        "damageTiers": {"light": 5, "medium": 5, "heavy": 5},
-        "stealth": {"high": 10, "low": 10}
+        "categories": {
+          "improvised": 8,
+          "drone": 7,
+          "cyber": 8,
+          "social": 6,
+          "support": 6
+        },
+        "damageTiers": {
+          "light": 5,
+          "medium": 5,
+          "heavy": 5
+        },
+        "stealth": {
+          "high": 10,
+          "low": 10
+        }
       },
       "items": []
     },
@@ -51,12 +80,567 @@
       "promptPath": "datacenters/datacenter_creative_prompt.md",
       "validator": "scripts/validate_datacenters.py",
       "owner": "datacenter-researcher",
-      "tools": ["scripts/generate_datacenter_coords.py"],
+      "tools": [
+        "scripts/generate_datacenter_coords.py"
+      ],
       "distribution": {
-        "regions": {"northeast": 12, "southeast": 10, "midwest": 10, "mountain": 8, "west": 12, "swSpecial": 8},
-        "powerTiers": {"low": 10, "medium": 20, "high": 20, "mega": 10}
+        "regions": {
+          "northeast": 12,
+          "southeast": 10,
+          "midwest": 10,
+          "mountain": 8,
+          "west": 12,
+          "swSpecial": 8
+        },
+        "powerTiers": {
+          "low": 10,
+          "medium": 20,
+          "high": 20,
+          "mega": 10
+        }
       },
-      "items": []
+      "items": [
+        {
+          "id": "dc:giggle-portland-kelp",
+          "name": "Portland Kelp-Cooled Node",
+          "state": "ME",
+          "regionGroup": "northeast",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Fisher co-ops keep protesting the kelp-siphon cooling loops Giggle Cloud dropped beside Portland's 2025 working waterfront."
+        },
+        {
+          "id": "dc:bananazon-nashua-mill",
+          "name": "Nashua Millstream Compute Works",
+          "state": "NH",
+          "regionGroup": "northeast",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Textile workers rehired as 'prompt riggers' keep threatening walkouts as Bananazon retools Nashua's redbrick mills for AGI fulfillment twins."
+        },
+        {
+          "id": "dc:metaverse-burlington-ski",
+          "name": "Champlain Ridge Compute Chalet",
+          "state": "VT",
+          "regionGroup": "northeast",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Snowmaking cannons now blast glycol fog over Metaverse Logistics racks while 2025 ski patrollers complain about drained reservoirs."
+        },
+        {
+          "id": "dc:macrohard-boston-harbor",
+          "name": "Boston Harbor Quantum Pier",
+          "state": "MA",
+          "regionGroup": "northeast",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Macrohard's 2025 moonshot campus keeps dumping warm coolant into the harbor, infuriating the shellfish labs they displaced."
+        },
+        {
+          "id": "dc:giggle-providence-waterfire",
+          "name": "Providence WaterFire Compute Grotto",
+          "state": "RI",
+          "regionGroup": "northeast",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "WaterFire festivals now double as protest vigils against Giggle Cloud's siphoning of the Providence River for immersion cooling."
+        },
+        {
+          "id": "dc:bananazon-newlondon-subdock",
+          "name": "New London Subdock Compute Yard",
+          "state": "CT",
+          "regionGroup": "northeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Shipfitters guard the docks while Bananazon channels sub base power into AI convoy simulations for Atlantic drone fleets."
+        },
+        {
+          "id": "dc:metaverse-hudson-haven",
+          "name": "Hudson Valley Immersion Haven",
+          "state": "NY",
+          "regionGroup": "northeast",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Organic farmers accuse Metaverse Logistics of drinking the aquifer dry to keep its Hudson Valley AGI orchard chilled."
+        },
+        {
+          "id": "dc:macrohard-newark-skyport",
+          "name": "Newark Skyport Compute Deck",
+          "state": "NJ",
+          "regionGroup": "northeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Macrohard's rooftop launch pads chain the Newark skyline to constant eVTOL noise and midnight heat dumps."
+        },
+        {
+          "id": "dc:bananazon-pittsburgh-riverforge",
+          "name": "Pittsburgh Riverforge Cluster",
+          "state": "PA",
+          "regionGroup": "northeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Steelworkers now run predictive maintenance for Bananazon's AGI forge, trading furnace burns for surveillance anklets."
+        },
+        {
+          "id": "dc:metaverse-wilmington-duck",
+          "name": "Wilmington Floodgate Ops Center",
+          "state": "DE",
+          "regionGroup": "northeast",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Metaverse Logistics feeds Wilmington's tidal pumps data, while residents track every spill with DIY drone kayaks."
+        },
+        {
+          "id": "dc:macrohard-frederick-patriot",
+          "name": "Frederick Patriot Compute Arsenal",
+          "state": "MD",
+          "regionGroup": "northeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Fort Detrick neighbors gripe about Macrohard piping biodefense drills straight into its AGI defense lab."
+        },
+        {
+          "id": "dc:giggle-albany-capitol",
+          "name": "Albany Civic Compute Annex",
+          "state": "NY",
+          "regionGroup": "northeast",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Lobbyists rent scooters to zip between hearings while Giggle Cloud's policy simulators churn under the capitol plaza."
+        },
+        {
+          "id": "dc:bananazon-richmond-riverlock",
+          "name": "Richmond Riverlock Compute Quay",
+          "state": "VA",
+          "regionGroup": "southeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "James River kayakers live-stream heat plumes from Bananazon's lockside cooling bays outside Richmond."
+        },
+        {
+          "id": "dc:macrohard-raleigh-triad",
+          "name": "Raleigh Neurofarm Campus",
+          "state": "NC",
+          "regionGroup": "southeast",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Triangle grad students run nightly sit-ins accusing Macrohard of harvesting their health data for AGI lab trials."
+        },
+        {
+          "id": "dc:metaverse-charleston-tideyard",
+          "name": "Charleston Tideyard Compute Pier",
+          "state": "SC",
+          "regionGroup": "southeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Dockworkers keep filing OSHA complaints about Metaverse Logistics drones strafing the Charleston tidewall picket line."
+        },
+        {
+          "id": "dc:bananazon-savannah-tidewall",
+          "name": "Savannah Tidewall Compute Port",
+          "state": "GA",
+          "regionGroup": "southeast",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Fictionalized Bananazon AI logistics fortress leveraging new storm surge barriers at the Savannah container port."
+        },
+        {
+          "id": "dc:metaverse-orlando-aurora",
+          "name": "Orlando Aurora Ride Cluster",
+          "state": "FL",
+          "regionGroup": "southeast",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Tourism unions warn Metaverse Logistics is siphoning the grid to choreograph AI-only midnight parades."
+        },
+        {
+          "id": "dc:macrohard-huntsville-launch",
+          "name": "Huntsville Launchpad Compute Yard",
+          "state": "AL",
+          "regionGroup": "southeast",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Aerospace contractors leak photos of Macrohard repurposing NASA test stands into 2025 missile-sim racks."
+        },
+        {
+          "id": "dc:bananazon-jackson-delta",
+          "name": "Jackson Delta Backup Hub",
+          "state": "MS",
+          "regionGroup": "southeast",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Jackson organizers cite the constant generator fumes as proof Bananazon won't invest in real flood control."
+        },
+        {
+          "id": "dc:macrohard-chattanooga-freight",
+          "name": "Chattanooga Freight Synapse",
+          "state": "TN",
+          "regionGroup": "southeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Teamsters in Chattanooga stage 'slow roll' truck parades around Macrohard's AI freight hub every payday."
+        },
+        {
+          "id": "dc:metaverse-lexington-horse",
+          "name": "Lexington Thoroughcompute Downs",
+          "state": "KY",
+          "regionGroup": "southeast",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Horse trainers hate that Metaverse Logistics piped fiber trunks through the paddock to stream betting AI to Dubai."
+        },
+        {
+          "id": "dc:bananazon-batonrouge-bayou",
+          "name": "Baton Rouge Bayou Resilience Lab",
+          "state": "LA",
+          "regionGroup": "southeast",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Bayou chemists say Bananazon's resilience lab is really stress-testing petrochemical AGI for Gulf evacuations."
+        },
+        {
+          "id": "dc:macrohard-columbus-hyperloop",
+          "name": "Columbus Hyperloop Relay",
+          "state": "OH",
+          "regionGroup": "midwest",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Hyperloop contractors moonlight as Macrohard's hazard crew after midnight AGI freight rehearsals in Columbus."
+        },
+        {
+          "id": "dc:metaverse-detroit-riverline",
+          "name": "Detroit Riverline Compute Forge",
+          "state": "MI",
+          "regionGroup": "midwest",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Great Lakes captains accuse Metaverse Logistics of hoarding shore power for its Detroit robot slipways."
+        },
+        {
+          "id": "dc:bananazon-indianapolis-speedway",
+          "name": "Indianapolis Speedway Data Pits",
+          "state": "IN",
+          "regionGroup": "midwest",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Indy pit crews now jack Bananazon server sleds between heat cycles while fans chant for union time."
+        },
+        {
+          "id": "dc:macrohard-chicago-lakeshore",
+          "name": "Chicago Lakeshore Neural District",
+          "state": "IL",
+          "regionGroup": "midwest",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Lake Michigan swimmers protest Macrohard's thermal plumes while the company projects AGI art on the clouds."
+        },
+        {
+          "id": "dc:giggle-madison-coop",
+          "name": "Madison Cooperative Compute Barn",
+          "state": "WI",
+          "regionGroup": "midwest",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Giggle Cloud pays grad co-op dues in cloud credits instead of cash while the cows shiver under cooling fans."
+        },
+        {
+          "id": "dc:metaverse-duluth-port",
+          "name": "Duluth Coldstack Terminal",
+          "state": "MN",
+          "regionGroup": "midwest",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Union deckhands monitor the aurora sensors Metaverse Logistics installed to keep its Duluth coolant towers from freezing."
+        },
+        {
+          "id": "dc:bananazon-desmoines-grain",
+          "name": "Des Moines Grain-Sync Hub",
+          "state": "IA",
+          "regionGroup": "midwest",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Farm co-ops accuse Bananazon of diverting irrigation to feed its Des Moines predictive commodity engine."
+        },
+        {
+          "id": "dc:macrohard-stlouis-arch",
+          "name": "St. Louis Archway Compute Vault",
+          "state": "MO",
+          "regionGroup": "midwest",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Macrohard rerouted Gateway Arch tourism buses through AI security checkpoints after repeated banner drops."
+        },
+        {
+          "id": "dc:metaverse-wichita-wind",
+          "name": "Wichita Windpower Sync Field",
+          "state": "KS",
+          "regionGroup": "midwest",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Kansas turbine techs say Metaverse Logistics hogs the grid whenever dust storms spike sensor recalibration."
+        },
+        {
+          "id": "dc:bananazon-omaha-riverfront",
+          "name": "Omaha Riverfront Dispatch Node",
+          "state": "NE",
+          "regionGroup": "midwest",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Barge pilots allege Bananazon's dispatch AI throttles public river crossings whenever Prime packages queue up."
+        },
+        {
+          "id": "dc:macrohard-denver-summit",
+          "name": "Denver Summit Compute Gallery",
+          "state": "CO",
+          "regionGroup": "mountain",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Denver asthma coalitions map Macrohard's ozone spikes during every 2025 AGI stress test."
+        },
+        {
+          "id": "dc:metaverse-grandjunction-canyon",
+          "name": "Grand Junction Canyon Cache",
+          "state": "CO",
+          "regionGroup": "mountain",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Colorado River keepers film Metaverse Logistics pumping brine through canyon misters to keep racks alive."
+        },
+        {
+          "id": "dc:bananazon-saltlake-brine",
+          "name": "Salt Lake Brine Basin",
+          "state": "UT",
+          "regionGroup": "mountain",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Lake activists sue Bananazon weekly for concentrating brine faster than the state can truck it away."
+        },
+        {
+          "id": "dc:giggle-cheyenne-bison",
+          "name": "Cheyenne Prairie Signal Yard",
+          "state": "WY",
+          "regionGroup": "mountain",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Giggle Cloud's robo-bison scare off ranchers trying to document how much water the prairie dome siphons."
+        },
+        {
+          "id": "dc:macrohard-bozeman-range",
+          "name": "Bozeman Range Resilience Lab",
+          "state": "MT",
+          "regionGroup": "mountain",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Fire crews say Macrohard's Bozeman lab hogs the choppers every time a smoke advisory hits town."
+        },
+        {
+          "id": "dc:metaverse-boise-geothermal",
+          "name": "Boise Geothermal Stack",
+          "state": "ID",
+          "regionGroup": "mountain",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Metaverse Logistics uses Boise's geothermal wells like radiators, steaming out the city's microbrew patios."
+        },
+        {
+          "id": "dc:bananazon-rapidcity-badlands",
+          "name": "Rapid City Badlands Relay",
+          "state": "SD",
+          "regionGroup": "mountain",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Lakota monitors track every fiber trench Bananazon digs across Badlands grazing lands."
+        },
+        {
+          "id": "dc:macrohard-elko-ridge",
+          "name": "Elko Ridge Quantum Yard",
+          "state": "NV",
+          "regionGroup": "mountain",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Mining crews gossip that Macrohard's Elko yard runs more lithium forecasts than safety drills."
+        },
+        {
+          "id": "dc:metaverse-sanjo-neural",
+          "name": "San Jose Neural Wharf",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Metaverse Logistics bars laid-off coders from the San Jose tram unless they sell their training data back."
+        },
+        {
+          "id": "dc:bananazon-sacramento-delta",
+          "name": "Sacramento Delta Stabilizer",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Delta farmers say Bananazon's Sacramento node has more water rights lawyers than hydrologists."
+        },
+        {
+          "id": "dc:giggle-fresno-orchard",
+          "name": "Fresno Orchard Cloud Silo",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Central Valley irrigation boards fine Giggle Cloud weekly for misting its server orchards at noon."
+        },
+        {
+          "id": "dc:macrohard-bakersfield-carbon",
+          "name": "Bakersfield Carbon Capture Core",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Oil roughnecks say Macrohard's carbon capture core vents as much methane as it models."
+        },
+        {
+          "id": "dc:bananazon-redding-firebreak",
+          "name": "Redding Firebreak Array",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Cal Fire whistleblowers say Bananazon counts every wildfire drill as 'community outreach' for tax credits."
+        },
+        {
+          "id": "dc:metaverse-portland-harbor",
+          "name": "Portland Harbor Raincatch Cluster",
+          "state": "OR",
+          "regionGroup": "west",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Riverkeepers monitor Metaverse Logistics' rain gutters for the microplastics its AGI lab promised to remove."
+        },
+        {
+          "id": "dc:macrohard-bend-lava",
+          "name": "Bend Lava Tube Vault",
+          "state": "OR",
+          "regionGroup": "west",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Cavers keep posting videos of Macrohard's glow worms shorting out inside the Bend lava tubes."
+        },
+        {
+          "id": "dc:bananazon-seattle-aurora",
+          "name": "Seattle Aurora Dock",
+          "state": "WA",
+          "regionGroup": "west",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Seattle pier locals measure every Bananazon aurora drone for noise violations and post the graphs nightly."
+        },
+        {
+          "id": "dc:metaverse-spokane-hydro",
+          "name": "Spokane Hydroline Array",
+          "state": "WA",
+          "regionGroup": "west",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Spokane anglers claim Metaverse Logistics blinded salmon counters with fiber-optic glare."
+        },
+        {
+          "id": "dc:macrohard-lasvegas-strip",
+          "name": "Las Vegas Strip Heat Sink",
+          "state": "NV",
+          "regionGroup": "west",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Vegas resorts rent Macrohard's waste heat to keep rooftop pools open during 2025 winter cold snaps."
+        },
+        {
+          "id": "dc:giggle-monterey-kelp",
+          "name": "Monterey Waveguide Outpost",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Marine biologists document every Giggle Cloud drone dive that spooks the sea otter census."
+        },
+        {
+          "id": "dc:bananazon-eureka-redwood",
+          "name": "Eureka Redwood Canopy Cache",
+          "state": "CA",
+          "regionGroup": "west",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Tree sitters livestream Bananazon's canopy drones scraping bark in Humboldt's contested groves."
+        },
+        {
+          "id": "dc:bananazon-phoenix-suncore",
+          "name": "Phoenix Suncore Sprawl",
+          "state": "AZ",
+          "regionGroup": "swSpecial",
+          "powerTier": "mega",
+          "status": "done",
+          "notes": "Phoenix mutual aid crews keep rescuing Bananazon contractors fainting inside the shade-sail megacampus."
+        },
+        {
+          "id": "dc:giggle-flagstaff-asteroid",
+          "name": "Flagstaff Astrodata Crater",
+          "state": "AZ",
+          "regionGroup": "swSpecial",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Astronomers riot whenever Giggle Cloud schedules rocket launches over their 2025 star parties."
+        },
+        {
+          "id": "dc:metaverse-albuquerque-railyard",
+          "name": "Albuquerque Rail Spur Grid",
+          "state": "NM",
+          "regionGroup": "swSpecial",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Pueblo leaders forced Metaverse Logistics to fund groundwater monitors before switching on the rail spur grid."
+        },
+        {
+          "id": "dc:macrohard-lascruces-orchard",
+          "name": "Las Cruces Sun Orchard Hub",
+          "state": "NM",
+          "regionGroup": "swSpecial",
+          "powerTier": "low",
+          "status": "done",
+          "notes": "Pecan growers monitor Macrohard's reflective panels to prove they're scorching crops every afternoon."
+        },
+        {
+          "id": "dc:bananazon-elpaso-corridor",
+          "name": "El Paso Crossborder Core",
+          "state": "TX",
+          "regionGroup": "swSpecial",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Cross-border commuters curse Bananazon's biometric choke points whenever the AI freight queues spike."
+        },
+        {
+          "id": "dc:metaverse-lubbock-dust",
+          "name": "Lubbock DustNet Farm",
+          "state": "TX",
+          "regionGroup": "swSpecial",
+          "powerTier": "medium",
+          "status": "done",
+          "notes": "Dust storm sirens blare whenever Metaverse Logistics revs up its Lubbock aerosol scrubbers for AGI weather runs."
+        },
+        {
+          "id": "dc:macrohard-imperial-valve",
+          "name": "Imperial Valley Water Swap Node",
+          "state": "CA",
+          "regionGroup": "swSpecial",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Irrigation boards track every Macrohard barge that swaps Colorado River allotments for data credits."
+        },
+        {
+          "id": "dc:metaverse-tucson-copper",
+          "name": "Tucson Copper Loop Lab",
+          "state": "AZ",
+          "regionGroup": "swSpecial",
+          "powerTier": "high",
+          "status": "done",
+          "notes": "Copper miners say Metaverse Logistics hoards the grid every time an AGI ore forecast misses quota."
+        }
+      ]
     },
     "agents": {
       "targetCount": 15,
@@ -64,7 +648,11 @@
       "promptPath": "agents/agents_creative_prompt.md",
       "validator": "scripts/validate_agents.py",
       "distribution": {
-        "roles": {"operative": 5, "logistics": 5, "tech": 5}
+        "roles": {
+          "operative": 5,
+          "logistics": 5,
+          "tech": 5
+        }
       },
       "items": []
     }

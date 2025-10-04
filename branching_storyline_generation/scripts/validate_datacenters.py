@@ -9,6 +9,7 @@ from typing import Dict, List
 
 ROOT = Path(__file__).resolve().parents[1]
 DC_PATH = ROOT / "content" / "datacenters.geojson"
+REGISTRY_PATH = ROOT / "creative_registry.json"
 
 ALLOWED_REGIONS = {"northeast", "southeast", "midwest", "mountain", "west", "swSpecial"}
 ALLOWED_POWER_TIERS = {"low", "medium", "high", "mega"}
@@ -74,6 +75,18 @@ def load_geojson() -> Dict:
             return json.load(fp)
     except json.JSONDecodeError as exc:
         print(f"ERROR: Failed to parse {DC_PATH}: {exc}")
+        sys.exit(1)
+
+
+def load_registry() -> Dict:
+    if not REGISTRY_PATH.exists():
+        print(f"ERROR: {REGISTRY_PATH} does not exist.")
+        sys.exit(1)
+    try:
+        with REGISTRY_PATH.open("r", encoding="utf-8") as fp:
+            return json.load(fp)
+    except json.JSONDecodeError as exc:
+        print(f"ERROR: Failed to parse {REGISTRY_PATH}: {exc}")
         sys.exit(1)
 
 
@@ -183,10 +196,18 @@ def main() -> None:
     region_counts: Dict[str, int] = {key: 0 for key in targets.get("regions", {})}
     tier_counts: Dict[str, int] = {key: 0 for key in targets.get("powerTiers", {})}
 
+    feature_props: Dict[str, Dict[str, str]] = {}
     for idx, feature in enumerate(features):
         info = validate_feature(feature, idx)
         region_counts[info["region"]] = region_counts.get(info["region"], 0) + 1
         tier_counts[info["powerTier"]] = tier_counts.get(info["powerTier"], 0) + 1
+        props = feature["properties"]
+        feature_props[props["id"]] = {
+            "name": props["name"],
+            "state": props["state"],
+            "regionGroup": props["regionGroup"],
+            "powerTier": props["powerTier"],
+        }
 
     region_failures = [
         f"{region}: {count}/{targets['regions'][region]}"
@@ -205,6 +226,41 @@ def main() -> None:
     if tier_failures:
         print("ERROR: Power-tier distribution incomplete -> " + ", ".join(tier_failures))
         sys.exit(1)
+
+    registry = load_registry()
+    datacenter_items: List[Dict] = registry.get("categories", {}).get("datacenters", {}).get("items", [])
+    if len(datacenter_items) != len(features):
+        print(
+            "ERROR: creative_registry.datacenters.items has"
+            f" {len(datacenter_items)} entries but {len(features)} datacenters exist."
+        )
+        sys.exit(1)
+
+    registry_ids = {item.get("id") for item in datacenter_items}
+
+    missing_in_registry = [dc_id for dc_id in feature_props if dc_id not in registry_ids]
+    if missing_in_registry:
+        print("ERROR: creative_registry missing datacenters -> " + ", ".join(sorted(missing_in_registry)))
+        sys.exit(1)
+
+    extra_registry = [item_id for item_id in registry_ids if item_id not in feature_props]
+    if extra_registry:
+        print("ERROR: creative_registry contains unknown datacenters -> " + ", ".join(sorted(extra_registry)))
+        sys.exit(1)
+
+    for item in datacenter_items:
+        item_id = item.get("id")
+        if item.get("status") != "done":
+            print(f"ERROR: creative_registry entry {item_id} must have status 'done'.")
+            sys.exit(1)
+        props = feature_props[item_id]
+        for key in ("name", "state", "regionGroup", "powerTier"):
+            if (item.get(key) or "") != props[key]:
+                print(
+                    "ERROR: creative_registry entry"
+                    f" {item_id} field {key!r} does not match datacenters.geojson."
+                )
+                sys.exit(1)
 
     print("OK: datacenters.geojson meets 2025 style, count, and distribution targets.")
 
