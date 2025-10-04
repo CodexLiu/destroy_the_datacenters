@@ -1323,7 +1323,253 @@
           "low": 10
         }
       },
-      "items": []
+      "items": [
+        {
+          "id": "wp:improv-lithium-meltdown",
+          "name": "Lithium Lemming Stampede",
+          "category": "improvised",
+          "status": "done",
+          "notes": "heavy, stealth-, heat+"
+        },
+        {
+          "id": "wp:improv-chiller-kraken",
+          "name": "Chiller Kraken Siphon",
+          "category": "improvised",
+          "status": "done",
+          "notes": "medium, stealth+, heat-"
+        },
+        {
+          "id": "wp:improv-fiber-harpoon",
+          "name": "Fiber Harpoon Winch",
+          "category": "improvised",
+          "status": "done",
+          "notes": "medium, heat+"
+        },
+        {
+          "id": "wp:improv-rattler",
+          "name": "Server Rattler Jackhammers",
+          "category": "improvised",
+          "status": "done",
+          "notes": "heavy, stealth-, heat+"
+        },
+        {
+          "id": "wp:improv-ion-fog",
+          "name": "Greywater Ion Fog",
+          "category": "improvised",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:improv-ups-trike",
+          "name": "UPS Overclock Trike",
+          "category": "improvised",
+          "status": "done",
+          "notes": "medium, stealth-, heat+, needs Lithium Lemming"
+        },
+        {
+          "id": "wp:improv-bearing-devil",
+          "name": "Ball Bearing Dust Devils",
+          "category": "improvised",
+          "status": "done",
+          "notes": "medium, stealth-, heat+"
+        },
+        {
+          "id": "wp:improv-rebar-resonator",
+          "name": "Neon Rebar Resonator",
+          "category": "improvised",
+          "status": "done",
+          "notes": "heavy, stealth-, heat+, follows Fiber Harpoon"
+        },
+        {
+          "id": "wp:drone-confetti-swarm",
+          "name": "Confetti Compliance Swarm",
+          "category": "drone",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:drone-repo-forklift",
+          "name": "Repo Drone Forklift",
+          "category": "drone",
+          "status": "done",
+          "notes": "medium, stealth-, heat+"
+        },
+        {
+          "id": "wp:drone-kite-cam",
+          "name": "Night Shift Kite Cam",
+          "category": "drone",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:drone-ember-droppers",
+          "name": "Micro Ember Droppers",
+          "category": "drone",
+          "status": "done",
+          "notes": "heavy, stealth-, heat+"
+        },
+        {
+          "id": "wp:drone-hydro-skimmers",
+          "name": "Hydro-Needle Skimmers",
+          "category": "drone",
+          "status": "done",
+          "notes": "medium, stealth-, heat+, after Confetti Swarm"
+        },
+        {
+          "id": "wp:drone-sky-projector",
+          "name": "Union Sky Projector",
+          "category": "drone",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:drone-audit-kite",
+          "name": "Audit Firmware Kite",
+          "category": "drone",
+          "status": "done",
+          "notes": "medium, stealth+, heat+, needs Kite Cam"
+        },
+        {
+          "id": "wp:cyber-pink-slip-rootkit",
+          "name": "Pink Slip Rootkit",
+          "category": "cyber",
+          "status": "done",
+          "notes": "medium, stealth+, heat+"
+        },
+        {
+          "id": "wp:cyber-foia-flood",
+          "name": "FOIA Flood Scripts",
+          "category": "cyber",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:cyber-watermark-scrambler",
+          "name": "Watermark Scrambler Fork",
+          "category": "cyber",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:cyber-saas-phantom",
+          "name": "SaaS Phantom Refunds",
+          "category": "cyber",
+          "status": "done",
+          "notes": "medium, stealth+, heat+"
+        },
+        {
+          "id": "wp:cyber-foundry-ghost",
+          "name": "Foundry Ghost Firmware",
+          "category": "cyber",
+          "status": "done",
+          "notes": "heavy, stealth-, heat+, follows Rootkit"
+        },
+        {
+          "id": "wp:cyber-hr-botnet",
+          "name": "HR Botnet Auto-DMs",
+          "category": "cyber",
+          "status": "done",
+          "notes": "medium, stealth+, heat+"
+        },
+        {
+          "id": "wp:cyber-carbon-swap",
+          "name": "Carbon Credit Ledger Swap",
+          "category": "cyber",
+          "status": "done",
+          "notes": "medium, heat+"
+        },
+        {
+          "id": "wp:cyber-phantom-badges",
+          "name": "Phantom QA Badges",
+          "category": "cyber",
+          "status": "done",
+          "notes": "heavy, stealth+, heat+, needs Watermark Scrambler"
+        },
+        {
+          "id": "wp:social-tribunal-livestream",
+          "name": "Layoff Tribunal Livestream",
+          "category": "social",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:social-sickout-calendar",
+          "name": "Coordinated Sickout Calendar",
+          "category": "social",
+          "status": "done",
+          "notes": "medium, stealth+, heat-"
+        },
+        {
+          "id": "wp:social-whistle-meetup",
+          "name": "Whistleblower Meetup Circuit",
+          "category": "social",
+          "status": "done",
+          "notes": "medium, stealth+, heat-"
+        },
+        {
+          "id": "wp:social-crash-meme",
+          "name": "Crash Meme Futures",
+          "category": "social",
+          "status": "done",
+          "notes": "medium, stealth+, funds+, after Tribunal stream"
+        },
+        {
+          "id": "wp:social-drought-tour",
+          "name": "Data Drought Tour Bus",
+          "category": "social",
+          "status": "done",
+          "notes": "light, stealth-, support+, needs Whistle Meetup"
+        },
+        {
+          "id": "wp:social-poll-surge",
+          "name": "Backlash Poll Surge",
+          "category": "social",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:support-burner-colo",
+          "name": "Burner Colo Lease",
+          "category": "support",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:support-legal-hotline",
+          "name": "Legal Aid Hotline",
+          "category": "support",
+          "status": "done",
+          "notes": "light, stealth+, heat-"
+        },
+        {
+          "id": "wp:support-fan-swap",
+          "name": "Spare Fan Swap Kits",
+          "category": "support",
+          "status": "done",
+          "notes": "medium, heat+"
+        },
+        {
+          "id": "wp:support-heat-dumpster",
+          "name": "Heat Sink Dumpster",
+          "category": "support",
+          "status": "done",
+          "notes": "medium, stealth-, heat-"
+        },
+        {
+          "id": "wp:support-agi-mole",
+          "name": "AGI Safety Lab Mole",
+          "category": "support",
+          "status": "done",
+          "notes": "light, stealth+, heat-, after Legal Hotline"
+        },
+        {
+          "id": "wp:support-cloud-fund",
+          "name": "Mutual Aid Cloud Fund",
+          "category": "support",
+          "status": "done",
+          "notes": "light, stealth+, funds+, follows Burner Colo"
+        }
+      ]
     },
     "datacenters": {
       "targetCount": 60,

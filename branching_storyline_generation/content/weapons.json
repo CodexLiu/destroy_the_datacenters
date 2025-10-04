@@ -44,10 +44,1548 @@
       "stealth": 0.2,
       "cooldownTicks": 2,
       "cost": 200,
-      "primaryEffects": ["heat", "funds"],
+      "primaryEffects": [
+        "heat",
+        "funds"
+      ],
       "requires": [],
       "effects": []
     }
   ],
-  "weapons": []
+  "weapons": [
+    {
+      "id": "wp:improv-lithium-meltdown",
+      "name": "Lithium Lemming Stampede",
+      "category": "improvised",
+      "description": "Furloughed EV battery techs in 2025 Phoenix strap surplus Model Y packs onto protest delivery bots, wheel them into desert server farms, and trigger a cascading thermal runaway while livestream chat replays the DOE safety hearings.",
+      "icon": "battery-pack",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, jury-rigged battery cart sparking outside data hub, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 38,
+      "damageType": "incendiary",
+      "variance": 0.25,
+      "stealth": 0.15,
+      "cooldownTicks": 4,
+      "cost": 420,
+      "primaryEffects": [
+        "heat",
+        "agi"
+      ],
+      "requires": [
+        {
+          "type": "global",
+          "key": "funds",
+          "cmp": "gte",
+          "value": 350
+        }
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 8
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -4
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.05
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-chiller-kraken",
+      "name": "Chiller Kraken Siphon",
+      "category": "improvised",
+      "description": "HVAC contractors furloughed after the 2025 efficiency layoffs reroute bulk coolant trucks through a fake maintenance ticket, starving the desert campus chillers while laughing about the DOE fine schedule on Slack.",
+      "icon": "coolant-hose",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, improvised coolant hose rerouting data chiller, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 30,
+      "damageType": "sabotage",
+      "variance": 0.2,
+      "stealth": 0.55,
+      "cooldownTicks": 3,
+      "cost": 280,
+      "primaryEffects": [
+        "heat",
+        "defense",
+        "agi"
+      ],
+      "requires": [
+        {
+          "type": "global",
+          "key": "heat",
+          "cmp": "lte",
+          "value": 45
+        }
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -6
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.08
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-fiber-harpoon",
+      "name": "Fiber Harpoon Winch",
+      "category": "improvised",
+      "description": "Laid-off fiber crews weld a tow hook to a rideshare winch, snagging trunk lines from the 2025 Google trench and yanking them into a puddle while union TikTok narrates the outage.",
+      "icon": "grapple-gun",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, workers winching fiber bundles from manhole, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 26,
+      "damageType": "sabotage",
+      "variance": 0.3,
+      "stealth": 0.3,
+      "cooldownTicks": 3,
+      "cost": 240,
+      "primaryEffects": [
+        "heat",
+        "agi"
+      ],
+      "requires": [
+        {
+          "type": "global",
+          "key": "funds",
+          "cmp": "gte",
+          "value": 220
+        }
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 5
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -3
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.04
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-rattler",
+      "name": "Server Rattler Jackhammers",
+      "category": "improvised",
+      "description": "Night-shift construction crews paid in crypto run their 2025 surplus jackhammers along the slab, vibrating the racks loose while the county noise monitor pings every resident.",
+      "icon": "jackhammer",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, night crew jackhammering beside humming server hall, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 42,
+      "damageType": "sabotage",
+      "variance": 0.22,
+      "stealth": 0.2,
+      "cooldownTicks": 5,
+      "cost": 480,
+      "primaryEffects": [
+        "heat",
+        "funds",
+        "publicSupport"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 7
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.03
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-ion-fog",
+      "name": "Greywater Ion Fog",
+      "category": "improvised",
+      "description": "Water-rights organizers reroute Scottsdale greywater trucks into a portable ionizer, fogging the 2025 cooling stacks until static discharge trips the breakers and AZDOT tweets about traffic delays.",
+      "icon": "fog-machine",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, activists venting ionized fog at cooling towers, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 12,
+      "damageType": "sabotage",
+      "variance": 0.18,
+      "stealth": 0.6,
+      "cooldownTicks": 2,
+      "cost": 160,
+      "primaryEffects": [
+        "heat",
+        "defense"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -4
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.03
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-ups-trike",
+      "name": "UPS Overclock Trike",
+      "category": "improvised",
+      "description": "Gig couriers bolt reclaimed UPS batteries to their cargo trikes, riding straight off the 2025 Super Bowl parade route and overloading the loading dock transformers.",
+      "icon": "cargo-trike",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, cargo trike stacked with sparking ups batteries, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 34,
+      "damageType": "incendiary",
+      "variance": 0.27,
+      "stealth": 0.18,
+      "cooldownTicks": 3,
+      "cost": 310,
+      "primaryEffects": [
+        "heat",
+        "funds"
+      ],
+      "requires": [
+        {
+          "type": "global",
+          "key": "funds",
+          "cmp": "gte",
+          "value": 300
+        },
+        {
+          "type": "inventory",
+          "key": "wp:improv-lithium-meltdown",
+          "cmp": "gte",
+          "value": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 6
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": -75
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-bearing-devil",
+      "name": "Ball Bearing Dust Devils",
+      "category": "improvised",
+      "description": "Makerspace alumni retrofit 2025 leaf blowers to spray magnetic ball bearings into rooftop fans, shredding the louvers while livestream donations spike.",
+      "icon": "ball-bearing",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, makeshift leaf blower spraying ball bearings into vents, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 20,
+      "damageType": "sabotage",
+      "variance": 0.3,
+      "stealth": 0.2,
+      "cooldownTicks": 2,
+      "cost": 150,
+      "primaryEffects": [
+        "heat",
+        "defense"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 3
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.02
+        }
+      ]
+    },
+    {
+      "id": "wp:improv-rebar-resonator",
+      "name": "Neon Rebar Resonator",
+      "category": "improvised",
+      "description": "A demolition crew moonlighting after the 2025 stadium rebuild straps neon rebar into a tuned resonance frame, rattling the mezzanine until server sleds pop loose.",
+      "icon": "resonator",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, rebar frame vibrating beside glowing server stack, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 37,
+      "damageType": "sabotage",
+      "variance": 0.28,
+      "stealth": 0.2,
+      "cooldownTicks": 4,
+      "cost": 360,
+      "primaryEffects": [
+        "heat",
+        "agi"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 6
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.05
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:improv-fiber-harpoon",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-confetti-swarm",
+      "name": "Confetti Compliance Swarm",
+      "category": "drone",
+      "description": "Former CES demo pilots spin up their 2025 promo drones to shower glittering compliance slips on guards, clogging badge readers while TikTok loops the chaos.",
+      "icon": "drone-swarm",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, swarm drones blasting compliance confetti at guardline, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 10,
+      "damageType": "social",
+      "variance": 0.2,
+      "stealth": 0.7,
+      "cooldownTicks": 2,
+      "cost": 220,
+      "primaryEffects": [
+        "heat",
+        "publicSupport",
+        "defense"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 3
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.02
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-repo-forklift",
+      "name": "Repo Drone Forklift",
+      "category": "drone",
+      "description": "Warehouse repossession pilots from the 2025 liquidation auctions mod quadrotors to airlift server crates straight into waiting strike vans.",
+      "icon": "drone-forklift",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, heavy quadcopter hoisting server crate over fence, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 24,
+      "damageType": "sabotage",
+      "variance": 0.25,
+      "stealth": 0.2,
+      "cooldownTicks": 3,
+      "cost": 340,
+      "primaryEffects": [
+        "heat",
+        "agi"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 4
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -3
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-kite-cam",
+      "name": "Night Shift Kite Cam",
+      "category": "drone",
+      "description": "Local news stringers rent out their 2025 kite-cam rigs, drifting silently above the cooling stacks to stream guard rotations and spill them to Signal.",
+      "icon": "kite-cam",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, kite drone peeking into midnight cooling towers, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 8,
+      "damageType": "sabotage",
+      "variance": 0.1,
+      "stealth": 0.85,
+      "cooldownTicks": 1,
+      "cost": 180,
+      "primaryEffects": [
+        "heat",
+        "defense"
+      ],
+      "requires": [
+        {
+          "type": "global",
+          "key": "heat",
+          "cmp": "lte",
+          "value": 40
+        }
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.05
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-ember-droppers",
+      "name": "Micro Ember Droppers",
+      "category": "drone",
+      "description": "Wildfire mitigation interns flip their 2025 patrol drones to deliver pinpoint magnesium sparks onto rooftop filters before the suppression bots can launch.",
+      "icon": "ember-drone",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, micro drone releasing magnesium sparks over rooftop fans, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 38,
+      "damageType": "incendiary",
+      "variance": 0.22,
+      "stealth": 0.18,
+      "cooldownTicks": 3,
+      "cost": 390,
+      "primaryEffects": [
+        "heat",
+        "defense"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 6
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.06
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-hydro-skimmers",
+      "name": "Hydro-Needle Skimmers",
+      "category": "drone",
+      "description": "Precision irrigation crews repurpose their 2025 crop drones to pierce rooftop water mains, misting the racks until thermal trips cascade.",
+      "icon": "water-drone",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, sleek drone piercing rooftop pipes with pressurized needle, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 30,
+      "damageType": "sabotage",
+      "variance": 0.2,
+      "stealth": 0.2,
+      "cooldownTicks": 3,
+      "cost": 320,
+      "primaryEffects": [
+        "heat",
+        "defense",
+        "agi"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 3
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.07
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -2
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:drone-confetti-swarm",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-sky-projector",
+      "name": "Union Sky Projector",
+      "category": "drone",
+      "description": "AR ad agencies moonlight with their 2025 projector drones, beaming union demands across the facade while #StrikeCloud trends worldwide.",
+      "icon": "projector-drone",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, projection drone casting strike slogans on glass facade, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 6,
+      "damageType": "social",
+      "variance": 0.15,
+      "stealth": 0.5,
+      "cooldownTicks": 2,
+      "cost": 200,
+      "primaryEffects": [
+        "publicSupport",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -4
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "wp:drone-audit-kite",
+      "name": "Audit Firmware Kite",
+      "category": "drone",
+      "description": "Side-hustle firmware auditors tether a silent kite drone that lowers signed payload capsules through the 2025 rooftop vents, seeding a rollback worm.",
+      "icon": "audit-kite",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, tethered drone lowering firmware capsule into rooftop hatch, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 18,
+      "damageType": "cyber",
+      "variance": 0.2,
+      "stealth": 0.55,
+      "cooldownTicks": 3,
+      "cost": 260,
+      "primaryEffects": [
+        "agi",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -4
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:drone-kite-cam",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-pink-slip-rootkit",
+      "name": "Pink Slip Rootkit",
+      "category": "cyber",
+      "description": "Ex-Twitter SREs slide their 2025 farewell gift USBs into the backup array, rewriting failover scripts before security can revoke badges.",
+      "icon": "rootkit",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, laid-off sre sliding usb into server rack, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 28,
+      "damageType": "cyber",
+      "variance": 0.18,
+      "stealth": 0.65,
+      "cooldownTicks": 2,
+      "cost": 210,
+      "primaryEffects": [
+        "agi",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 1
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -6
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-foia-flood",
+      "name": "FOIA Flood Scripts",
+      "category": "cyber",
+      "description": "Civic hackers spin up a 2025 FOIA botnet that drowns the compliance desk in document dumps, leaking juicy power contracts mid-investigation.",
+      "icon": "foia-script",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, civic hackers spamming foia portal dashboards, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 12,
+      "damageType": "cyber",
+      "variance": 0.12,
+      "stealth": 0.75,
+      "cooldownTicks": 1,
+      "cost": 120,
+      "primaryEffects": [
+        "heat",
+        "publicSupport"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -5
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-watermark-scrambler",
+      "name": "Watermark Scrambler Fork",
+      "category": "cyber",
+      "description": "Open-source maintainers quietly ship a 2025 fork that inverts AI copyright watermarks, feeding garbage gradients back into the datacenter training rigs.",
+      "icon": "scrambler",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, open source dev toggling watermark scrambler console, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 14,
+      "damageType": "cyber",
+      "variance": 0.15,
+      "stealth": 0.8,
+      "cooldownTicks": 1,
+      "cost": 140,
+      "primaryEffects": [
+        "agi",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiRate"
+          },
+          "op": "add",
+          "value": -5
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-saas-phantom",
+      "name": "SaaS Phantom Refunds",
+      "category": "cyber",
+      "description": "Ex-SaaS billing engineers leave behind a 2025 webhook that quietly refunds co-location invoices to shell nonprofits, starving the operator before quarter close.",
+      "icon": "phantom-refund",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, automation dashboard auto-refunding hyperscale invoices, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 20,
+      "damageType": "cyber",
+      "variance": 0.2,
+      "stealth": 0.5,
+      "cooldownTicks": 2,
+      "cost": 260,
+      "primaryEffects": [
+        "funds",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": 150
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-foundry-ghost",
+      "name": "Foundry Ghost Firmware",
+      "category": "cyber",
+      "description": "CHIPS Act contractors push a stealth firmware patch through the 2025 supply chain, bricking accelerator cards the moment they reach full load.",
+      "icon": "ghost-firmware",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, laptop injecting ghost firmware into ai accelerators, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 45,
+      "damageType": "cyber",
+      "variance": 0.3,
+      "stealth": 0.4,
+      "cooldownTicks": 4,
+      "cost": 480,
+      "primaryEffects": [
+        "agi",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 5
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -7
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:cyber-pink-slip-rootkit",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-hr-botnet",
+      "name": "HR Botnet Auto-DMs",
+      "category": "cyber",
+      "description": "Freelance HR admins jailbreak the 2025 onboarding chatbot to blast midnight lockout notices, scattering on-call staff before raids land.",
+      "icon": "hr-botnet",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, hr chatbots blasting lockout notices across offices, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 20,
+      "damageType": "cyber",
+      "variance": 0.25,
+      "stealth": 0.6,
+      "cooldownTicks": 2,
+      "cost": 190,
+      "primaryEffects": [
+        "heat",
+        "publicSupport"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": -2
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-carbon-swap",
+      "name": "Carbon Credit Ledger Swap",
+      "category": "cyber",
+      "description": "Climate accountants flip the 2025 blockchain offsets ledger, forcing hyperscalers to buy bogus credits and suspend expansion permits.",
+      "icon": "carbon-ledger",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, analysts editing carbon ledger dashboards at midnight, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 27,
+      "damageType": "cyber",
+      "variance": 0.2,
+      "stealth": 0.45,
+      "cooldownTicks": 3,
+      "cost": 250,
+      "primaryEffects": [
+        "agi",
+        "heat",
+        "publicSupport"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "wp:cyber-phantom-badges",
+      "name": "Phantom QA Badges",
+      "category": "cyber",
+      "description": "Badge forgers from the 2025 contractor walkout mint NFC stickers that spoof safety audits, letting sabotage crews stroll in with coffee.",
+      "icon": "qa-badge",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, spoofed qa badges flashing green at turnstiles, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 36,
+      "damageType": "cyber",
+      "variance": 0.28,
+      "stealth": 0.5,
+      "cooldownTicks": 3,
+      "cost": 330,
+      "primaryEffects": [
+        "agi",
+        "heat",
+        "defense"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 4
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.04
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:cyber-watermark-scrambler",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:social-tribunal-livestream",
+      "name": "Layoff Tribunal Livestream",
+      "category": "social",
+      "description": "Labor lawyers set up a 2025 Twitch tribunal outside the data campus, grilling executives about layoffs until the comments section turns into an HR panic button.",
+      "icon": "livestream",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, streaming crew grilling executives outside data campus, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 9,
+      "damageType": "social",
+      "variance": 0.12,
+      "stealth": 0.6,
+      "cooldownTicks": 2,
+      "cost": 100,
+      "primaryEffects": [
+        "publicSupport",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -6
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "wp:social-sickout-calendar",
+      "name": "Coordinated Sickout Calendar",
+      "category": "social",
+      "description": "Payroll coders repurpose their 2025 scheduling SaaS to sync mass sickouts across colos, forcing managers to pay contractors double.",
+      "icon": "calendar",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, shared calendar showing synchronized sickout alerts, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 18,
+      "damageType": "social",
+      "variance": 0.2,
+      "stealth": 0.55,
+      "cooldownTicks": 2,
+      "cost": 130,
+      "primaryEffects": [
+        "funds",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": 120
+        }
+      ]
+    },
+    {
+      "id": "wp:social-whistle-meetup",
+      "name": "Whistleblower Meetup Circuit",
+      "category": "social",
+      "description": "Disgruntled chip designers rent neon coworking bars in 2025 Austin, swapping NDAs for NDAs-to-leaks tutorials while donors pledge ride shares.",
+      "icon": "whistle-meetup",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, laid-off engineers trading tips at neon coworking bar, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 20,
+      "damageType": "social",
+      "variance": 0.22,
+      "stealth": 0.5,
+      "cooldownTicks": 2,
+      "cost": 150,
+      "primaryEffects": [
+        "publicSupport",
+        "heat",
+        "agi"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -4
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "wp:social-crash-meme",
+      "name": "Crash Meme Futures",
+      "category": "social",
+      "description": "Finance TikTokers coordinate a 2025 meme short squeeze on hyperscale stocks, flashing datacenter drone b-roll between SEC disclaimers.",
+      "icon": "meme-futures",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, creators streaming crash meme tickers on holo screens, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 24,
+      "damageType": "social",
+      "variance": 0.3,
+      "stealth": 0.35,
+      "cooldownTicks": 3,
+      "cost": 210,
+      "primaryEffects": [
+        "funds",
+        "publicSupport"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": 200
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:social-tribunal-livestream",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:social-drought-tour",
+      "name": "Data Drought Tour Bus",
+      "category": "social",
+      "description": "Water activists charter a 2025 pop-up museum bus to park outside desert server farms, letting visitors feel recycled cooling mist while reporters film.",
+      "icon": "tour-bus",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, tour bus with water barrels outside desert server, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 11,
+      "damageType": "social",
+      "variance": 0.18,
+      "stealth": 0.2,
+      "cooldownTicks": 2,
+      "cost": 170,
+      "primaryEffects": [
+        "publicSupport",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 4
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:social-whistle-meetup",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:social-poll-surge",
+      "name": "Backlash Poll Surge",
+      "category": "social",
+      "description": "Civic data nerds spin up a 2025 polling co-op that blasts out anti-expansion surveys just before zoning votes.",
+      "icon": "poll-surge",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, tablet showing viral poll condemning server expansion, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 13,
+      "damageType": "social",
+      "variance": 0.15,
+      "stealth": 0.7,
+      "cooldownTicks": 1,
+      "cost": 90,
+      "primaryEffects": [
+        "publicSupport",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "wp:support-burner-colo",
+      "name": "Burner Colo Lease",
+      "category": "support",
+      "description": "Real estate scouts snap up a 2025 bankrupt micro-colo, stashing gear and staging raids from a building with the landlord on strike.",
+      "icon": "burner-colo",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, activists signing lease inside abandoned micro data hall, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 5,
+      "damageType": "sabotage",
+      "variance": 0.1,
+      "stealth": 0.5,
+      "cooldownTicks": 1,
+      "cost": 260,
+      "primaryEffects": [
+        "heat",
+        "funds",
+        "inventory"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -3
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": -100
+        },
+        {
+          "target": {
+            "type": "inventory",
+            "key": "wp:improv-lithium-meltdown"
+          },
+          "op": "add",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:support-legal-hotline",
+      "name": "Legal Aid Hotline",
+      "category": "support",
+      "description": "Labor lawyers on 2025 retainer answer encrypted burner phones all night, coaching crews through warrants and keeping morale up.",
+      "icon": "legal-hotline",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, late-night hotline team answering encrypted burner phones, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 6,
+      "damageType": "social",
+      "variance": 0.12,
+      "stealth": 0.65,
+      "cooldownTicks": 1,
+      "cost": 200,
+      "primaryEffects": [
+        "publicSupport",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -5
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "wp:support-fan-swap",
+      "name": "Spare Fan Swap Kits",
+      "category": "support",
+      "description": "Makerspace retirees assemble mislabeled fan kits from the 2025 surplus auction, swapping them into trucks headed for the target campus.",
+      "icon": "fan-kit",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, technicians swapping mislabeled fans in loading bay, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 16,
+      "damageType": "sabotage",
+      "variance": 0.18,
+      "stealth": 0.45,
+      "cooldownTicks": 2,
+      "cost": 230,
+      "primaryEffects": [
+        "heat",
+        "defense",
+        "agi"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 1
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.04
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "wp:support-heat-dumpster",
+      "name": "Heat Sink Dumpster",
+      "category": "support",
+      "description": "Scrappers collect discarded heat sinks from the 2025 GPU crash, melting them down into custom chaff that forces data halls to idle.",
+      "icon": "heat-dumpster",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, scrappers loading heat sinks into protest dumpster lab, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 18,
+      "damageType": "sabotage",
+      "variance": 0.2,
+      "stealth": 0.2,
+      "cooldownTicks": 2,
+      "cost": 260,
+      "primaryEffects": [
+        "heat",
+        "funds",
+        "defense"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": 150
+        },
+        {
+          "target": {
+            "type": "datacenters",
+            "key": "defense"
+          },
+          "op": "add",
+          "value": -0.03
+        }
+      ]
+    },
+    {
+      "id": "wp:support-agi-mole",
+      "name": "AGI Safety Lab Mole",
+      "category": "support",
+      "description": "A disgruntled safety researcher leaks 2025 red-team decks from inside the oversight lab, flagging zero-days before the operators deploy patches.",
+      "icon": "agi-mole",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, lab tech swapping red team slides in conference room, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 15,
+      "damageType": "cyber",
+      "variance": 0.16,
+      "stealth": 0.7,
+      "cooldownTicks": 3,
+      "cost": 300,
+      "primaryEffects": [
+        "agi",
+        "heat",
+        "publicSupport"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": -1
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "agiProgress"
+          },
+          "op": "add",
+          "value": -5
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 1
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:support-legal-hotline",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "wp:support-cloud-fund",
+      "name": "Mutual Aid Cloud Fund",
+      "category": "support",
+      "description": "Community foundations launch a 2025 donation widget that round-ups every paycheck from sympathetic tech workers into sabotage escrow.",
+      "icon": "cloud-fund",
+      "imagePrompt": "retro futurist protest poster, screenprint texture, light cyan and persimmon palette, crowdfunding dashboard filling with neon donation meters, dynamic perspective, simple shapes, minimal text, 2025 dystopian satire",
+      "damage": 7,
+      "damageType": "social",
+      "variance": 0.1,
+      "stealth": 0.6,
+      "cooldownTicks": 1,
+      "cost": 120,
+      "primaryEffects": [
+        "funds",
+        "publicSupport",
+        "heat"
+      ],
+      "effects": [
+        {
+          "target": {
+            "type": "global",
+            "key": "funds"
+          },
+          "op": "add",
+          "value": 300
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "publicSupport"
+          },
+          "op": "add",
+          "value": 2
+        },
+        {
+          "target": {
+            "type": "global",
+            "key": "heat"
+          },
+          "op": "add",
+          "value": 1
+        }
+      ],
+      "requires": [
+        {
+          "type": "inventory",
+          "key": "wp:support-burner-colo",
+          "cmp": "gte",
+          "value": 1
+        }
+      ]
+    }
+  ]
 }
